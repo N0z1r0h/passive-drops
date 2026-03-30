@@ -1,5 +1,6 @@
 package n0z1r0h.pd;
 
+import n0z1r0h.pd.Registries.ItemReg;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class PassiveDrops implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ItemReg.init();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
