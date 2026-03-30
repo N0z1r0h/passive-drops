@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "n0z1r0h.pd.mixin.client",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-      "n0z1r0h.pd.mixin.client.ExampleClientMixin"
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
