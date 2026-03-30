@@ -12,8 +12,7 @@ import net.minecraft.world.item.Item;
 import java.util.function.Function;
 
 public class ItemReg {
-    public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory,
-                                              Item.Properties settings) {
+    public static <T extends Item> T register(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
 
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(PassiveDrops.MOD_ID,
                 name));
