@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "pd",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Passive Drops",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"N0z1r0h"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/pd/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"n0z1r0h.pd.PassiveDrops"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+          "n0z1r0h.pd.PassiveDropsClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"pd.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "pd.client.mixins.json",
 			"environment": "client"
 		}
 	],
