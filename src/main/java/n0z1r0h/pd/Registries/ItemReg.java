@@ -8,9 +8,12 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemUseAnimation;
+import net.minecraft.world.item.component.Consumable;
 
 import java.util.function.Function;
 
@@ -33,6 +36,7 @@ public class ItemReg {
     );
     public static final Item FROG_LEG = register("frog_leg", Item::new, new Item.Properties()
             .component(DataComponents.MAX_STACK_SIZE, 64)
+            .food(new FoodProperties(2, 1.8F, false), new Consumable(1.6, ItemUseAnimation.EAT, true, null))
     );
 
     public static void init() {}
