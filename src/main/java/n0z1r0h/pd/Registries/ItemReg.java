@@ -8,6 +8,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -36,7 +37,14 @@ public class ItemReg {
     );
     public static final Item FROG_LEG = register("frog_leg", Item::new, new Item.Properties()
             .component(DataComponents.MAX_STACK_SIZE, 64)
-            .food(new FoodProperties(2, 1.8F, false), new Consumable(1.6, ItemUseAnimation.EAT, true, null))
+            .food(new FoodProperties(2, 1.8F, false), new Consumable(1.6F, ItemUseAnimation.EAT, SoundEvents.GENERIC_EAT, true,
+                    null))
+    );
+    public static final Item COOKED_FROG_LEG = register("cooked_frog_leg", Item::new, new Item.Properties()
+            .component(DataComponents.MAX_STACK_SIZE, 64)
+            .food(new FoodProperties(5, 6F, false), new Consumable(1.6F, ItemUseAnimation.EAT,
+                    SoundEvents.GENERIC_EAT, true,
+                    null))
     );
 
     public static void init() {}
