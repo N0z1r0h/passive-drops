@@ -28,7 +28,12 @@ public class ItemReg {
     }
 
     public static final Item FUR = register("fur", Item::new,
-            new Item.Properties().component(DataComponents.MAX_STACK_SIZE, 64));
+            new Item.Properties()
+                    .component(DataComponents.MAX_STACK_SIZE, 64)
+    );
+    public static final Item FROG_LEG = register("frog_leg", Item::new, new Item.Properties()
+            .component(DataComponents.MAX_STACK_SIZE, 64)
+    );
 
     public static void init() {}
 }
