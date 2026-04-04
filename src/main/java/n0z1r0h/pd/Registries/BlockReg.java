@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Function;
@@ -33,7 +34,12 @@ public class BlockReg {
         return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(PassiveDrops.MOD_ID, name));
     }
 
-
+    public static final Block DIRTY_COBBLESTONE = register(
+            "dirty_cobblestone",
+            Block::new,
+            BlockBehaviour.Properties.of().sound(SoundType.GRAVEL),
+            true
+    );
 
 
 
