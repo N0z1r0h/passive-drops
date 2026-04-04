@@ -2,19 +2,15 @@ package n0z1r0h.pd.Registries;
 
 import n0z1r0h.pd.Item.FoodData;
 import n0z1r0h.pd.PassiveDrops;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemUseAnimation;
-import net.minecraft.world.item.component.Consumable;
+import net.minecraft.world.item.*;
 
 import java.util.function.Function;
 
@@ -43,6 +39,33 @@ public class ItemReg {
             .component(DataComponents.MAX_STACK_SIZE, 64)
             .food(FoodData.COOKED_FROG_LEG)
     );
+
+
+
+
+
+
+
+
+
+    /*public static final ResourceKey<CreativeModeTab> PD_TAB = ResourceKey.create(
+            BuiltInRegistries.CREATIVE_MODE_TAB.key(),
+            Identifier.fromNamespaceAndPath(
+                    PassiveDrops.MOD_ID,
+                    "pd_tab"
+            )
+    );
+
+    public static final CreativeModeTab PASSIVE_DROPS_TAB = FabricCreativeModeTab.builder()
+            .icon(() -> new ItemStack(ItemReg.FUR))
+            .title(Component.translatable("creative_mode_tab.pd"))
+            .displayItems((params, output) -> {
+                output.accept(ItemReg.FUR);
+                output.accept(ItemReg.RAW_FROG_LEG);
+                output.accept(ItemReg.COOKED_FROG_LEG);
+            })
+            .build();*/
+
 
     public static void init() {}
 }
