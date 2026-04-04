@@ -1,9 +1,11 @@
 package n0z1r0h.pd.datagen;
 
+import n0z1r0h.pd.Registries.ItemReg;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricPackOutput output) {
@@ -16,6 +18,8 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
+        itemModelGenerator.generateFlatItem(ItemReg.FROG_LEG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemReg.COOKED_FROG_LEG, ModelTemplates.FLAT_ITEM);
     }
 
     @Override
