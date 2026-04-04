@@ -8,5 +8,6 @@ public class PassiveDropsDataGenerator implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
         pack.addProvider(EngProvider::new);
+        pack.addProvider(ModelProvider::new);
     }
 }
