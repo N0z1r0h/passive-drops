@@ -5,5 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
 public class PassiveDropsDataGenerator implements DataGeneratorEntrypoint {
     @Override
-    public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {}
+    public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+        FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+    }
 }
