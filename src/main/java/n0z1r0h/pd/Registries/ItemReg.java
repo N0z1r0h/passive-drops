@@ -1,5 +1,6 @@
 package n0z1r0h.pd.Registries;
 
+import n0z1r0h.pd.Item.FoodData;
 import n0z1r0h.pd.PassiveDrops;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -36,14 +37,11 @@ public class ItemReg {
     );
     public static final Item RAW_FROG_LEG = register("raw_frog_leg", Item::new, new Item.Properties()
             .component(DataComponents.MAX_STACK_SIZE, 64)
-            .food(new FoodProperties(2, 1.8F, false), new Consumable(1.6F, ItemUseAnimation.EAT, SoundEvents.GENERIC_EAT, true,
-                    null))
+            .food(FoodData.RAW_FROG_LEG)
     );
     public static final Item COOKED_FROG_LEG = register("cooked_frog_leg", Item::new, new Item.Properties()
             .component(DataComponents.MAX_STACK_SIZE, 64)
-            .food(new FoodProperties(5, 6F, false), new Consumable(1.6F, ItemUseAnimation.EAT,
-                    SoundEvents.GENERIC_EAT, true,
-                    null))
+            .food(FoodData.COOKED_FROG_LEG)
     );
 
     public static void init() {}
