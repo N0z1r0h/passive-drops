@@ -1,5 +1,6 @@
 package n0z1r0h.pd;
 
+import n0z1r0h.pd.Registries.BlockReg;
 import n0z1r0h.pd.Registries.ItemReg;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,6 +22,7 @@ public class PassiveDrops implements ModInitializer {
 		// Proceed with mild caution.
 
 		ItemReg.init();
+		BlockReg.init();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
