@@ -1,5 +1,6 @@
 package n0z1r0h.pd.datagen;
 
+import n0z1r0h.pd.Registries.BlockReg;
 import n0z1r0h.pd.Registries.ItemReg;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -14,6 +15,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
+        blockStateModelGenerator.createTrivialCube(BlockReg.DIRTY_COBBLESTONE);
     }
 
     @Override
