@@ -13,6 +13,6 @@ public class EngProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
-        
+
     }
 }
