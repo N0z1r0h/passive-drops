@@ -14,7 +14,7 @@ public class EngProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider holderLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("item.pd.fur", "Fur");
-        translationBuilder.add("item.pd.frog_leg", "Frog Leg");
+        translationBuilder.add("item.pd.raw_frog_leg", "Raw Frog Leg");
         translationBuilder.add("item.pd.cooked_frog_leg", "Cooked Frog Leg");
     }
 }

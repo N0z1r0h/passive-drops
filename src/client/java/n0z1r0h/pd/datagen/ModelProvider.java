@@ -18,7 +18,7 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
-        itemModelGenerator.generateFlatItem(ItemReg.FROG_LEG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ItemReg.RAW_FROG_LEG, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ItemReg.COOKED_FROG_LEG, ModelTemplates.FLAT_ITEM);
     }
 

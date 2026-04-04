@@ -34,7 +34,7 @@ public class ItemReg {
             new Item.Properties()
                     .component(DataComponents.MAX_STACK_SIZE, 64)
     );
-    public static final Item FROG_LEG = register("frog_leg", Item::new, new Item.Properties()
+    public static final Item RAW_FROG_LEG = register("raw_frog_leg", Item::new, new Item.Properties()
             .component(DataComponents.MAX_STACK_SIZE, 64)
             .food(new FoodProperties(2, 1.8F, false), new Consumable(1.6F, ItemUseAnimation.EAT, SoundEvents.GENERIC_EAT, true,
                     null))
