@@ -16,6 +16,6 @@ public class EngProvider extends FabricLanguageProvider {
         translationBuilder.add("item.pd.fur", "Fur");
         translationBuilder.add("item.pd.raw_frog_leg", "Raw Frog Leg");
         translationBuilder.add("item.pd.cooked_frog_leg", "Cooked Frog Leg");
-        translationBuilder.add("creative_mode_tab.pd", "Passive Drops - Creative Mode Tab")
+        translationBuilder.add("creative_mode_tab.pd", "Passive Drops - Creative Mode Tab");
     }
 }

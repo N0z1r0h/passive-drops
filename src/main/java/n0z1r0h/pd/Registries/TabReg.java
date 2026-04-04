@@ -2,6 +2,7 @@ package n0z1r0h.pd.Registries;
 
 import n0z1r0h.pd.PassiveDrops;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -27,4 +28,6 @@ public class TabReg {
                 output.accept(ItemReg.COOKED_FROG_LEG);
             })
             .build();
+
+    Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, PD_TAB, PASSIVE_DROPS_TAB);
 }
