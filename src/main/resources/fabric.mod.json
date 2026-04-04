@@ -20,6 +20,9 @@
 		],
 		"client": [
           "n0z1r0h.pd.PassiveDropsClient"
+		],
+		"fabric-datagen": [
+			"n0z1r0h.pd.datagen.PassiveDropsDataGenerator"
 		]
 	},
 	"mixins": [
