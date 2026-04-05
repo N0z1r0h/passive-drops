@@ -37,7 +37,7 @@ public class BlockReg {
     public static final Block DIRTY_COBBLESTONE = register(
             "dirty_cobblestone",
             Block::new,
-            BlockBehaviour.Properties.of().sound(SoundType.GRAVEL),
+            BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1, 2F),
             true
     );
 
