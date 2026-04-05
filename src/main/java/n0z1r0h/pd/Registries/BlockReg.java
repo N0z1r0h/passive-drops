@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -37,11 +38,16 @@ public class BlockReg {
     public static final Block DIRTY_COBBLESTONE = register(
             "dirty_cobblestone",
             Block::new,
-            BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1, 2F),
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1, 2F),
             true
     );
 
-
+    public static final Block GRASSY_DIRT = register(
+            "grassy_dirt",
+            Block::new,
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(0.5F).sound(SoundType.GRAVEL),
+            true
+    );
 
 
 
