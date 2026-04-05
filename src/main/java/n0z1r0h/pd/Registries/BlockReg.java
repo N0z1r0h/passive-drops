@@ -1,5 +1,6 @@
 package n0z1r0h.pd.Registries;
 
+import n0z1r0h.pd.Block.GrassyDirt;
 import n0z1r0h.pd.PassiveDrops;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -44,7 +45,7 @@ public class BlockReg {
 
     public static final Block GRASSY_DIRT = register(
             "grassy_dirt",
-            Block::new,
+            GrassyDirt::new,
             BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(0.5F).sound(SoundType.GRAVEL),
             true
     );
