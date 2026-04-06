@@ -17,7 +17,7 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         blockStateModelGenerator.createTrivialCube(BlockReg.DIRTY_COBBLESTONE);
-        blockStateModelGenerator.createTrivialBlock(BlockReg.STONE_PILLAR, TexturedModel.COLUMN_ALT);
+       //  blockStateModelGenerator.createTrivialBlock(BlockReg.STONE_PILLAR, TexturedModel.COLUMN_ALT);
     }
 
     @Override
