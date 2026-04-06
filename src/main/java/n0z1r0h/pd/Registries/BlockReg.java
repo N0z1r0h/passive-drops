@@ -45,14 +45,14 @@ public class BlockReg {
             true
     );
 
-    public static final Block GRASSY_DIRT = register(
+    /*public static final Block GRASSY_DIRT = register(
             "grassy_dirt",
             GrassyDirt::new,
             BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(0.5F).sound(SoundType.GRAVEL),
             true
     );
 
-    /*public static final Block STONE_PILLAR = register(
+    public static final Block STONE_PILLAR = register(
             "stone_pillar",
             RotatedPillarBlock::new,
             BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F),
