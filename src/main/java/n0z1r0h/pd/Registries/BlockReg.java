@@ -52,12 +52,12 @@ public class BlockReg {
             true
     );
 
-    public static final Block STONE_PILLAR = register(
+    /*public static final Block STONE_PILLAR = register(
             "stone_pillar",
             RotatedPillarBlock::new,
             BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5F, 6.0F),
             true
-    );
+    );*/
 
 
 
