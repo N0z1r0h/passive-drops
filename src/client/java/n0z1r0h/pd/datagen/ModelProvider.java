@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricPackOutput output) {
@@ -16,6 +17,7 @@ public class ModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         blockStateModelGenerator.createTrivialCube(BlockReg.DIRTY_COBBLESTONE);
+        blockStateModelGenerator.createTrivialBlock(BlockReg.STONE_PILLAR, TexturedModel.COLUMN_ALT);
     }
 
     @Override
